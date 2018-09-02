@@ -1,1 +1,1 @@
-# goodbye-nuxt-virgin-
+# goodbye-nuxt-virgin
