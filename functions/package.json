@@ -1,7 +1,14 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
-  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
   "dependencies": {
     "ajv": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -19,5 +26,10 @@
     "vue-meta": "^1.4.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "private": true
 }
